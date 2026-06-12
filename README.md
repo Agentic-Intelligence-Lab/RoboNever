@@ -87,35 +87,10 @@ done
 
 ## Data Specifications
 
-<div align="center">
-
-### Robot Configuration
-
-| Specification | Value |
-|:-------------:|:-----:|
-| **Robot** | Piper Dual-Arm |
-| **Action Space** | 14-DOF |
-| **Arms** | Left (6J + Grip) + Right (6J + Grip) |
-
-### Camera System
-
-| Camera | Position | Resolution |
-|:------:|:--------:|:----------:|
-| `head` | Head-mounted | 480x640 |
-| `left_wrist` | Left arm wrist | 480x640 |
-| `right_wrist` | Right arm wrist | 480x640 |
-| `front_view` | External front | 480x640 |
-
-### Recording Specs
-
-| Parameter | Value |
-|:---------:|:-----:|
-| **FPS** | 30 |
-| **Video Codec** | H.264 |
-| **State Format** | Parquet |
-| **Video Format** | MP4 |
-
-</div>
+- **Robot**: Piper Dual-Arm, 14-DOF (6 joints + 1 gripper per arm)
+- **Cameras**: 4 synchronized views (head, left_wrist, right_wrist, front_view), 480x640 resolution
+- **FPS**: 30
+- **Format**: H.264 video, Parquet for state/action, MP4 for videos
 
 ---
 
